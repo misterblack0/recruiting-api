@@ -12,6 +12,7 @@ connectDB();
 
 // Route files
 const candidates = require("./routes/candidates");
+const jobTitles = require("./routes/jobTitles");
 
 const app = express();
 
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === "development") {
 
 // Mount routers
 app.use("/candidates", candidates);
+app.use("/jobTitles", jobTitles);
 
 app.use(errorHandler);
 

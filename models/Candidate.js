@@ -35,7 +35,7 @@ const CandidateSchema = new mongoose.Schema({
   jobTitle: {
     type: String,
     required: [true, "PLease add a job title"],
-    maxlength: [50, "Job can not be more than 50 characters"],
+    maxlength: [50, "Job title can not be more than 50 characters"],
   },
   addedAt: {
     type: Date,
